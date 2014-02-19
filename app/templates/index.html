@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{user.nickname}}'s To-Do List</h1>
+{% for task in tasks %}
+<ul>
+	<li>{{task.name}}</li>
+</ul>
+{% endfor %}
+{% endblock %}
