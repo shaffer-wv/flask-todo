@@ -3,7 +3,7 @@
 <h1>{{user.nickname}}'s To-Do List</h1>
 {% for task in tasks %}
 <ul>
-	<li>{{task.name}}</li>
+	<li>{% include 'task.html' %}</li>
 </ul>
 {% endfor %}
 {% endblock %}
